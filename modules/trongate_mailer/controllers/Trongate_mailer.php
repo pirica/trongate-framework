@@ -15,7 +15,7 @@
  *     'subject' => 'Welcome',
  *     'msg_plain' => 'Hello, welcome to Trongate!'
  * ];
- * $mailer->send($data); // Use the public send() method
+ * $mailer->send($data); // Use the public send() method to send emails.
  * ```
  * 
  * Configuration:
