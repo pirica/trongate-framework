@@ -41,6 +41,7 @@ a:hover { color: var(--primary-dark); }
 img { max-width: 100%; height: auto; }
 
 form { width: 100%; }
+input[type="date"],
 input[type="text"],
 input[type="search"],
 input[type="number"],
@@ -56,6 +57,11 @@ textarea {
   box-sizing: border-box;
 }
 
+textarea {
+  line-height: 1.6em;
+}
+
+input[type="date"]:focus,
 input[type="text"]:focus,
 input[type="search"]:focus,
 input[type="number"]:focus,
@@ -124,6 +130,9 @@ button:hover,
   color: var(--primary-color);
 }
 
+
+.modal-heading.danger,
+.modal-heading.danger:hover,
 .danger {
     background-color: var(--danger);
     border: 1px solid var(--danger-dark);
