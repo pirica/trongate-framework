@@ -45,6 +45,12 @@ class Templates extends Trongate {
         $this->display('public', $data);
     }
 
+    public function members_area(array $data): void {
+        $data['additional_includes_top'] = $this->build_additional_includes($data['additional_includes_top'] ?? []);
+        $data['additional_includes_btm'] = $this->build_additional_includes($data['additional_includes_btm'] ?? []);
+        $this->display('members_area', $data);
+    }
+
     /**
      * Display 404 error page.
      *
